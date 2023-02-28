@@ -142,37 +142,15 @@ function addNumAct(){
     getMyEle(".e9 .alert").innerHTML = "Đã nhập: "+actNum;
 }getMyEle("#addNumbActual").onclick = addNumAct;
 
-// function findInteger(){
-//     var count = 0;
-//     for(var i = 0; i < actNum.length; i++){
-//         if(Number.isInteger(actNum[i])){
-//             count +=1;
-//         }
-//     }
-//     getMyEle(".e9 .alert").innerHTML = "Số nguyên: "+ count;
-// }getMyEle("#actNumbtn").onclick = findInteger;
-function findInteger2(){
+function findInteger(){
     var count = 0;
-    var count2 = 0;
-    var max = parseInt(actNum[0])
-    for (var i =1 ; i < actNum.length; i++){
-        if(max < actNum[i]){
-            max = parseInt(actNum[i])
+    for(var i = 0; i < actNum.length; i++){
+        if(Number.isInteger(actNum[i])){
+            count +=1;
         }
     }
-    for (var i =actNum.length-1; i >= 0; i-- ){
-        count =0;
-        for (var t =0; t <= max; t++ ){
-            if( actNum[i] % t ==0){
-                count +=1;
-            }
-        }
-        if(count > 0){
-            count2 +=1;
-        }
-    }
-    getMyEle(".e9 .alert").innerHTML = "Số nguyên: "+ count2;
-}getMyEle("#actNumbtn").onclick = findInteger2;
+    getMyEle(".e9 .alert").innerHTML = "Số nguyên: "+ count;
+}getMyEle("#actNumbtn").onclick = findInteger;
 //*BAI 10
 function compareFuct(){
     var minusCount = 0;
