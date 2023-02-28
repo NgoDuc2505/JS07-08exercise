@@ -1,0 +1,116 @@
+/* ====GLOBAL==== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fontBolt--fontWeight: 600;
+    --bg-color: #FEFCF3;
+    --secondarY--color: #C58940;
+    --third-color:#E5BA73;
+    --fourth--color:#FAEAB1;
+    --th5-color:#DAE2B6;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-image: url('../img/pexels-simon-berger-1323550.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    font-size: 18px;
+}
+
+/* ====CONTENT  */
+.container{
+    display: flex;
+    gap: 20px;
+    padding-top: 100px;
+}
+.outPut{ 
+    height: 31px;
+    width: 400px;
+    margin-top: 50px;
+    border-radius: 6px;
+    background-color: var(--third-color);
+    font-size: 20px;
+    font-weight: bolder;
+}
+.inputNumberMain input{
+    height: 31px;
+}
+.inputNumberMain{
+    width: fit-content;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 50%);
+    border-radius: 6px;
+    padding: 40px 20px;
+}
+
+.container .card-header{
+    background-color:var(--secondarY--color);
+    text-align: center;
+    padding: 1rem;
+}
+.container .card-header h4{
+    font-weight: var(--fontBolt--fontWeight);
+    margin: 0;
+}
+.container .card-body{
+    background-color: var(--third-color);
+    height: 200px;
+    position: relative;
+}
+.container label{
+    font-weight: var(--fontBolt--fontWeight);
+}
+.btnGroup{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+.btnGroup button,
+#addNumb1{
+    padding: 10px 5px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    margin: 0 10px;
+    background-color: var(--th5-color);
+    font-weight: var(--fontBolt--fontWeight);
+    box-shadow: 0px 0px 6px 1px rgb(0 0 0 / 50%);
+}
+.container .card-footer{
+    background-color: var(--fourth--color);
+    padding: 1rem;
+}
+.container .card-footer .alert-success{
+    margin: 0;
+    font-weight: var(--fontBolt--fontWeight);
+    box-shadow: inset 0px 0px 6px 1px rgb(0 0 0 / 50%);
+}
+
+/* ====CHANGE INDEX==== */
+.inputGrp{
+    display: flex;
+    justify-content: center;
+}
+.inputGrp input{
+    margin-right: 20px;
+    height: 36px;
+}
+.e6 .card-body{
+    height: 300px;
+}
+.e6 .btnGroup{
+    bottom: 10px;
+}
+/* ====ACTUAL NUMBER==== */
+.e9 .card-body{
+    height: 300px;
+}
